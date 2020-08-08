@@ -1,0 +1,38 @@
+:root {
+  --grid-cols: 10;
+  --grid-rows: 10;
+}
+
+#container {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+  padding: 1em;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.first {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin: auto;
+  margin-top: 20px;
+  font-family: fantasy;
+  font-size: 3em;
+  height: 100px;
+}
+
+#GameBoard {
+  background-color: aquamarine;
+  border: solid 3px black;
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+}
